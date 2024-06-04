@@ -11,7 +11,8 @@ import jwt_aauthentication
 import service
 
 
-app = FastAPI()
+app = FastAPI(version="1.0",
+              title="Blog API")
 
 models.Base.metadata.create_all(engine)
 
